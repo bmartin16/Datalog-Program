@@ -8,8 +8,7 @@ int main(int argc, char** argv) {
     ifstream iFile;
     Lexer *lexer = new Lexer();
     string inputString;
-    iFile.open("in10.txt", ios::in);
-    cout << iFile.is_open() << endl;
+    iFile.open("input1.txt", ios::in);
     if(iFile) {
         ostringstream ss;
         ss << iFile.rdbuf();

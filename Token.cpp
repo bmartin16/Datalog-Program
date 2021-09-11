@@ -17,7 +17,7 @@ Token::Token(TokenType type, char description, int line) {
 string Token::tokenToString(TokenType token) {
     switch(token) {
         case TokenType::COLON: return "COLON"; break;
-        case TokenType::COLON_DASH: return "COLON-DASH"; break;
+        case TokenType::COLON_DASH: return "COLON_DASH"; break;
         case TokenType::COMMA: return "COMMA"; break;
         case TokenType::PERIOD: return "PERIOD"; break;
         case TokenType::Q_MARK: return "Q_MARK"; break;

@@ -23,7 +23,7 @@ void StringAutomaton::S1(const string& input) {
         index++;
         S2(input);
     }
-    else if(index == input.size()-1) {
+    else if(index == input.size() - 1) {
         Serr();
     }
     else if(input.at(index) == '\n') {

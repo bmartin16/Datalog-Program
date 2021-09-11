@@ -24,6 +24,8 @@ void IncompleteStringAutomaton::S1(const string& input) {
         S2(input);
     }
     else if(index == input.size() - 1) {
+        inputRead++;
+        newLines++;
     }
     else if(input.at(index) == '\n') {
         newLines++;

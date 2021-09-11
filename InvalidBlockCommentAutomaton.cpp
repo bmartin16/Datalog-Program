@@ -36,6 +36,7 @@ void InvalidBlockCommentAutomaton::S2(const string& input) {
         S3(input);
     }
     else if (index == input.size() - 1) {
+         newLines++;
     }
     else if(input.at(index) == '\n') {
         newLines++;

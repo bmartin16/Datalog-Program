@@ -10,7 +10,7 @@ class LineCommentAutomaton : public Automaton {
 private:
     void S1(const string& input);
 public:
-    LineCommentAutomaton() : Automaton(TokenType::ADD) {}
+    LineCommentAutomaton() : Automaton(TokenType::COMMENT) {}
     int Read(const string& input);
 };
 

@@ -37,6 +37,7 @@ void InvalidBlockCommentAutomaton::S2(const string& input) {
     }
     else if (index == input.size() - 1) {
          newLines++;
+         inputRead++;
     }
     else if(input.at(index) == '\n') {
         newLines++;
@@ -54,6 +55,12 @@ void InvalidBlockCommentAutomaton::S2(const string& input) {
 void InvalidBlockCommentAutomaton::S3(const string& input) {
     if(input.at(index) == '#') {
         Serr();
+    }
+    else if(input.at(index) == '\n') {
+        newLines++;
+        inputRead++;
+        index++;
+        S2(input);
     }
     else {
         inputRead++;

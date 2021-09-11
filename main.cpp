@@ -7,7 +7,7 @@ using namespace std;
 int main(int argc, char** argv) {
     Lexer *lexer = new Lexer();
     string inputString;
-    string fileName = argv[1];
+    string fileName = "input2.txt";
     ifstream iFile(fileName);
     if(iFile.is_open()) {
         ostringstream ss;

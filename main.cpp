@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
     for(unsigned int i = 0; i < lexer->getTokenVector().size(); i++) {
         cout << lexer->getTokenVector().at(i)->toString() << endl;
     }
-    cout << "Total Tokens = " + to_string(lexer->getTokenVector().size());
+    cout << "Total Tokens = " + to_string(lexer->getTokenVector().size()) << endl;
 
     // TODO
 

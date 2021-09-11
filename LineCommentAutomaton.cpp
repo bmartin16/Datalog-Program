@@ -20,6 +20,10 @@ int LineCommentAutomaton::Read(const string& input) {
 void LineCommentAutomaton::S1(const string& input) {
     if(input.at(index) == '\n' || index == input.size() - 1) {
     }
+    else if(input.at(index) == '|') {
+        Serr();
+        inputRead = 0;
+    }
     else {
         inputRead++;
         index++;

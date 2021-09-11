@@ -9,6 +9,7 @@
 class LineCommentAutomaton : public Automaton {
 private:
     void S1(const string& input);
+    void S2(const string& input);
 public:
     LineCommentAutomaton() : Automaton(TokenType::COMMENT) {}
     int Read(const string& input);

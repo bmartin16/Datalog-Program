@@ -11,10 +11,6 @@ int LineCommentAutomaton::Read(const string& input) {
         S1(input);
         return inputRead;
     }
-    else if (input.at(1) == '|') {
-        Serr();
-        return 0;
-    }
     else {
         Serr();
         return 0;
@@ -22,11 +18,22 @@ int LineCommentAutomaton::Read(const string& input) {
 }
 
 void LineCommentAutomaton::S1(const string& input) {
+    if(input.at(index) == '|') {
+        Serr();
+        inputRead = 0;
+    }
+    else {
+        inputRead++;
+        index++;
+        S2(input);
+    }
+}
+void LineCommentAutomaton::S2(const string& input) {
     if(input.at(index) == '\n' || index == input.size() - 1) {
     }
     else {
         inputRead++;
         index++;
-        S1(input);
+        S2(input);
     }
 }

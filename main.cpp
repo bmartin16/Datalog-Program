@@ -5,11 +5,11 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-    ifstream iFile;
     Lexer *lexer = new Lexer();
     string inputString;
-    iFile.open("input1.txt", ios::in);
-    if(iFile) {
+    string fileName = argv[1];
+    ifstream iFile(fileName);
+    if(iFile.is_open()) {
         ostringstream ss;
         ss << iFile.rdbuf();
         inputString = ss.str();

@@ -14,22 +14,22 @@ DatalogProgram::DatalogProgram(){}
 
 void DatalogProgram::ToString(){
     cout << "Schemes(" << schemeList.size() << "):" << endl;
-    for(int i = 0; i < schemeList.size(); i++){
+    for(unsigned int i = 0; i < schemeList.size(); i++){
         schemeList.at(i).SchemeToString();
         cout << endl;
     }
     cout << "Facts(" << factList.size() << "):" << endl;
-    for(int i = 0; i < factList.size(); i++){
+    for(unsigned int i = 0; i < factList.size(); i++){
         factList.at(i).FactToString();
         cout << endl;
     }
     cout << "Rules(" << ruleList.size() << "):" << endl;
-    for(int i = 0; i < ruleList.size(); i++){
+    for(unsigned int i = 0; i < ruleList.size(); i++){
         ruleList.at(i).RuleToString();
         cout << endl;
     }
     cout << "Queries(" << queryList.size() << "):" << endl;
-    for(int i = 0; i < queryList.size(); i++){
+    for(unsigned int i = 0; i < queryList.size(); i++){
         queryList.at(i).QueryToString();
         cout << endl;
     }
@@ -44,8 +44,8 @@ void DatalogProgram::ToString(){
 
 void DatalogProgram::CreateDomains(){
 
-    for(int i = 0; i < factList.size(); i++){
-        for (int j = 0; j < factList.at(i).parameterList.size(); j++){
+    for(unsigned int i = 0; i < factList.size(); i++){
+        for (unsigned int j = 0; j < factList.at(i).parameterList.size(); j++){
             if(factList.at(i).parameterList.at(j).isString == true){
                 domainList.insert(factList.at(i).parameterList.at(j).tokenDescription);
             }

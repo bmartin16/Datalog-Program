@@ -3,7 +3,6 @@
 //
 
 #include "Parser.h"
-#include "datalogProgram.h"
 #include <iostream>
 
 Parser::Parser(vector<Token*> tokenList) {

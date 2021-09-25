@@ -14,7 +14,7 @@ void Rule::RuleToString(){
     cout << "  ";
     headPredicate.PredicateToString();
     cout << " :- ";
-    for(int i = 0; i < bodyPredicateList.size(); i++){
+    for(unsigned int i = 0; i < bodyPredicateList.size(); i++){
         bodyPredicateList.at(i).PredicateToString();
     }
 }

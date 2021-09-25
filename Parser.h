@@ -7,7 +7,7 @@
 
 #include "Token.h"
 #include "DatalogProgram.h"
-#include <vector>;
+#include <vector>
 using namespace std;
 
 class Parser {

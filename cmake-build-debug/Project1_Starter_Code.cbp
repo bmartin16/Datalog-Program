@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project1_Starter_Code"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project1_Starter_Code">
+				<Option output="C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Project1_Starter_Code.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/18bma/cs236/Datalog-Program/."/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project1_Starter_Code"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project1_Starter_Code/fast">
+				<Option output="C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Project1_Starter_Code.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/18bma/cs236/Datalog-Program/."/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project1_Starter_Code/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Automaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/BlockCommentAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/BlockCommentAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/DatalogProgram.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/DatalogProgram.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/IdAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/IdAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/IncompleteStringAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/IncompleteStringAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/InvalidBlockCommentAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/InvalidBlockCommentAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Lexer.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Lexer.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/LineCommentAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/LineCommentAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/MatcherAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/MatcherAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Parameter.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Parameter.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Parser.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Parser.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Predicate.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Predicate.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Rule.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Rule.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/StringAutomaton.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/StringAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Token.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Token.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/main.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

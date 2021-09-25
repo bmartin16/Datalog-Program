@@ -1,0 +1,3 @@
+C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/CMakeFiles/Project1_Starter_Code.dir
+C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/18bma/cs236/Datalog-Program/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -16,9 +16,11 @@ void Rule::RuleToString(){
     cout << " :- ";
     for(unsigned int i = 0; i < bodyPredicateList.size(); i++){
         bodyPredicateList.at(i).PredicateToString();
-        cout << ",";
         if(i == bodyPredicateList.size()-1){
             cout <<".";
+        }
+        else{
+            cout << ",";
         }
     }
 }

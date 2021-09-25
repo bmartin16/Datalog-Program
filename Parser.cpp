@@ -89,7 +89,7 @@ DatalogProgram Parser::datalogProgram(){
         return *scheme;
     }
     else{
-        throw tokenList[currToken+1];
+        throw tokenList[currToken];
     }
 }
 void Parser::schemeList(vector<Predicate> &schemes){

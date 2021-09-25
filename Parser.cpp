@@ -129,7 +129,7 @@ Predicate Parser::fact(){
         return *fact;
     }
     else{
-        throw tokenList[currToken+1];
+        throw tokenList[currToken];
     }
 }
 void Parser::factList(vector<Predicate> &facts){

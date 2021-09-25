@@ -58,7 +58,7 @@ void Predicate::PredicateToString() {
             cout << ",";
         }
         else{
-            cout << ").";
+            cout << ")";
         }
     }
 }

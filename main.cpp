@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
     }
     catch(Token* token){
         cout << "Failure!" << endl;
-        cout << "  " << token->toString();
+        cout << "  " << token->toString() << endl;
     }
 
 

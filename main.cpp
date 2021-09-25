@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
     DatalogProgram myDatalogProgram;
     Lexer *lexer = new Lexer();
     string inputString;
-    string fileName = "input6.txt";
+    string fileName = argv[1];
     ifstream iFile(fileName);
     if(iFile.is_open()) {
         ostringstream ss;

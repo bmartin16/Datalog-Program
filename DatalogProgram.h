@@ -4,7 +4,7 @@
 
 #ifndef PROJECT1_STARTER_CODE_DATALOGPROGRAM_H
 #define PROJECT1_STARTER_CODE_DATALOGPROGRAM_H
-#include "rule.h"
+#include"Rule.h"
 #include <set>
 
 class DatalogProgram {

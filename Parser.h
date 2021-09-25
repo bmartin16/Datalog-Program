@@ -5,7 +5,7 @@
 #ifndef PROJECT1_STARTER_CODE_PARSER_H
 #define PROJECT1_STARTER_CODE_PARSER_H
 
-#include "token.h";
+#include "Token.h"
 #include "DatalogProgram.h"
 #include <vector>;
 using namespace std;

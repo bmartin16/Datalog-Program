@@ -13,7 +13,7 @@ Predicate::Predicate() {}
 
 void Predicate::SchemeToString() {
     cout << "  " << predicateName << "(";
-    for(int i = 0; i < parameterList.size(); i++){
+    for(unsigned int i = 0; i < parameterList.size(); i++){
         cout << parameterList.at(i).tokenDescription;
         if(i != parameterList.size() - 1){
             cout << ",";
@@ -26,7 +26,7 @@ void Predicate::SchemeToString() {
 
 void Predicate::FactToString() {
     cout << "  " << predicateName << "(";
-    for(int i = 0; i < parameterList.size(); i++){
+    for(unsigned int i = 0; i < parameterList.size(); i++){
         cout << parameterList.at(i).tokenDescription;
         if(i != parameterList.size() - 1){
             cout << ",";
@@ -39,7 +39,7 @@ void Predicate::FactToString() {
 
 void Predicate::QueryToString() {
     cout << "  " << predicateName << "(";
-    for(int i = 0; i < parameterList.size(); i++){
+    for(unsigned int i = 0; i < parameterList.size(); i++){
         cout << parameterList.at(i).tokenDescription;
         if(i != parameterList.size() - 1){
             cout << ",";
@@ -52,7 +52,7 @@ void Predicate::QueryToString() {
 
 void Predicate::PredicateToString() {
     cout << predicateName << "(";
-    for(int i = 0; i < parameterList.size(); i++){
+    for(unsigned int i = 0; i < parameterList.size(); i++){
         cout << parameterList.at(i).tokenDescription;
         if(i != parameterList.size() - 1){
             cout << ",";

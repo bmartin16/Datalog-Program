@@ -37,6 +37,8 @@ public:
     Token(TokenType type, char description, int line);
     string tokenToString(TokenType token);
     string toString();
+    TokenType getTokenType();
+    string getDescription();
 
     // TODO: add other needed methods
 };

@@ -44,3 +44,11 @@ string Token::toString() {
     tokenString = "(" + tokenToString(token) + ",\"" + description + "\"," + to_string(startLine) + ")";
     return tokenString;
 }
+
+TokenType Token::getTokenType() {
+    return this->token;
+}
+
+string Token::getDescription() {
+    return this->description;
+}

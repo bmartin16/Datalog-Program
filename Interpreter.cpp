@@ -21,7 +21,6 @@ Interpreter::Interpreter(DatalogProgram myDatalogProgram){
         myRelation->addTuple(tuple);
         myDatabase.findRelation(this->myDatalogProgram.factList.at(i).predicateName) -> addTuple(tuple);
     }
-    evaluateQueries();
 }
 
 Relation* Interpreter::evaluatePredicate(Predicate p) {

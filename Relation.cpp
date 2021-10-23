@@ -24,7 +24,7 @@ void Relation::toString(){
         if(t.getValues().size() > 0){
             cout << "  ";
         }
-        for(int i = 0; i < t.getValues().size(); i++){
+        for(unsigned int i = 0; i < t.getValues().size(); i++){
             cout << header.getAttributes().at(i) << "=" << t.getValues().at(i);
             if(i < t.getValues().size() - 1){
                 cout << ", ";

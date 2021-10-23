@@ -6,12 +6,21 @@ CMakeFiles/Project1_Starter_Code.dir/BlockCommentAutomaton.cpp.obj: \
  ../BlockCommentAutomaton.cpp \
  ../BlockCommentAutomaton.h \
  ../Token.h
+CMakeFiles/Project1_Starter_Code.dir/Database.cpp.obj: \
+ ../Database.cpp \
+ ../Database.h \
+ ../Header.h \
+ ../Relation.h \
+ ../Tuple.h
 CMakeFiles/Project1_Starter_Code.dir/DatalogProgram.cpp.obj: \
  ../DatalogProgram.cpp \
  ../DatalogProgram.h \
  ../Parameter.h \
  ../Predicate.h \
  ../Rule.h
+CMakeFiles/Project1_Starter_Code.dir/Header.cpp.obj: \
+ ../Header.cpp \
+ ../Header.h
 CMakeFiles/Project1_Starter_Code.dir/IdAutomaton.cpp.obj: \
  ../Automaton.h \
  ../IdAutomaton.cpp \
@@ -22,6 +31,17 @@ CMakeFiles/Project1_Starter_Code.dir/IncompleteStringAutomaton.cpp.obj: \
  ../IncompleteStringAutomaton.cpp \
  ../IncompleteStringAutomaton.h \
  ../Token.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.obj: \
+ ../Database.h \
+ ../DatalogProgram.h \
+ ../Header.h \
+ ../Interpreter.cpp \
+ ../Interpreter.h \
+ ../Parameter.h \
+ ../Predicate.h \
+ ../Relation.h \
+ ../Rule.h \
+ ../Tuple.h
 CMakeFiles/Project1_Starter_Code.dir/InvalidBlockCommentAutomaton.cpp.obj: \
  ../Automaton.h \
  ../InvalidBlockCommentAutomaton.cpp \
@@ -64,6 +84,11 @@ CMakeFiles/Project1_Starter_Code.dir/Predicate.cpp.obj: \
  ../Parameter.h \
  ../Predicate.cpp \
  ../Predicate.h
+CMakeFiles/Project1_Starter_Code.dir/Relation.cpp.obj: \
+ ../Header.h \
+ ../Relation.cpp \
+ ../Relation.h \
+ ../Tuple.h
 CMakeFiles/Project1_Starter_Code.dir/Rule.cpp.obj: \
  ../Parameter.h \
  ../Predicate.h \
@@ -77,13 +102,21 @@ CMakeFiles/Project1_Starter_Code.dir/StringAutomaton.cpp.obj: \
 CMakeFiles/Project1_Starter_Code.dir/Token.cpp.obj: \
  ../Token.cpp \
  ../Token.h
+CMakeFiles/Project1_Starter_Code.dir/Tuple.cpp.obj: \
+ ../Tuple.cpp \
+ ../Tuple.h
 CMakeFiles/Project1_Starter_Code.dir/main.cpp.obj: \
  ../Automaton.h \
+ ../Database.h \
  ../DatalogProgram.h \
+ ../Header.h \
+ ../Interpreter.h \
  ../Lexer.h \
  ../Parameter.h \
  ../Parser.h \
  ../Predicate.h \
+ ../Relation.h \
  ../Rule.h \
  ../Token.h \
+ ../Tuple.h \
  ../main.cpp

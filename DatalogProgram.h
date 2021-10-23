@@ -19,6 +19,7 @@ public:
     DatalogProgram();
     void ToString();
     void CreateDomains();
+    vector<string> returnPredicateNames(vector<Parameter> parameterList);
 };
 
 

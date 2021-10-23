@@ -11,4 +11,4 @@ add_executable(Project1_Starter_Code
         Lexer.h
         main.cpp
         Token.cpp
-        Token.h MatcherAutomaton.cpp MatcherAutomaton.h StringAutomaton.cpp StringAutomaton.h IdAutomaton.cpp IdAutomaton.h LineCommentAutomaton.cpp LineCommentAutomaton.h IncompleteStringAutomaton.cpp IncompleteStringAutomaton.h BlockCommentAutomaton.cpp BlockCommentAutomaton.h InvalidBlockCommentAutomaton.cpp InvalidBlockCommentAutomaton.h Parser.cpp Parser.h DatalogProgram.cpp DatalogProgram.h Predicate.cpp Predicate.h Rule.cpp Rule.h Parameter.cpp Parameter.h)
+        Token.h MatcherAutomaton.cpp MatcherAutomaton.h StringAutomaton.cpp StringAutomaton.h IdAutomaton.cpp IdAutomaton.h LineCommentAutomaton.cpp LineCommentAutomaton.h IncompleteStringAutomaton.cpp IncompleteStringAutomaton.h BlockCommentAutomaton.cpp BlockCommentAutomaton.h InvalidBlockCommentAutomaton.cpp InvalidBlockCommentAutomaton.h Parser.cpp Parser.h DatalogProgram.cpp DatalogProgram.h Predicate.cpp Predicate.h Rule.cpp Rule.h Parameter.cpp Parameter.h Tuple.cpp Tuple.h Header.cpp Header.h Relation.cpp Relation.h Database.cpp Database.h Interpreter.cpp Interpreter.h)

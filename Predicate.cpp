@@ -38,7 +38,7 @@ void Predicate::FactToString() {
 }
 
 void Predicate::QueryToString() {
-    cout << "  " << predicateName << "(";
+    cout << "" << predicateName << "(";
     for(unsigned int i = 0; i < parameterList.size(); i++){
         cout << parameterList.at(i).tokenDescription;
         if(i != parameterList.size() - 1){

@@ -1,5 +1,6 @@
 #include "Lexer.h"
 #include "Parser.h"
+#include "Interpreter.h"
 #include "Token.h"
 #include <fstream>
 #include <sstream>
@@ -29,8 +30,7 @@ int main(int argc, char** argv) {
     Parser *parser = new Parser(tokenList);
     try{
         myDatalogProgram = parser->datalogProgram();
-        cout << "Success!" << endl;
-        myDatalogProgram.ToString();
+        //myDatalogProgram.ToString();
 
     }
     catch(Token* token){
@@ -38,6 +38,7 @@ int main(int argc, char** argv) {
         cout << "  " << token->toString() << endl;
     }
 
+    Interpreter *interpreter = new Interpreter(myDatalogProgram);
 
     // TODO
 

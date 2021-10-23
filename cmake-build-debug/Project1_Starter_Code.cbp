@@ -91,10 +91,22 @@
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/BlockCommentAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Database.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Database.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/DatalogProgram.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/DatalogProgram.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Header.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Header.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/IdAutomaton.cpp">
@@ -107,6 +119,12 @@
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/IncompleteStringAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Interpreter.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Interpreter.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/InvalidBlockCommentAutomaton.cpp">
@@ -151,6 +169,12 @@
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Predicate.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Relation.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Relation.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Rule.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
@@ -167,6 +191,12 @@
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Token.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Tuple.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Tuple.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/main.cpp">

@@ -52,3 +52,11 @@ void DatalogProgram::CreateDomains(){
         }
     }
 }
+
+vector<string> DatalogProgram::returnPredicateNames(vector<Parameter> parameterList){
+    vector<string> stringList;
+    for(unsigned int i = 0; i < parameterList.size(); i++){
+        stringList.push_back(parameterList.at(i).tokenDescription);
+    }
+    return stringList;
+}

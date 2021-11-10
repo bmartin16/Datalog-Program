@@ -80,7 +80,6 @@ bool Interpreter::evaluateRule(Rule r){
 void Interpreter::evaluateRules(){
     cout << "Rule Evaluation" << endl;
     bool repeat = true;
-    bool check = true;
     int count = 0;
     while(repeat == true) {
         int checkCount = 0;

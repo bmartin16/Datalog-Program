@@ -57,7 +57,55 @@ Relation* Interpreter::evaluatePredicate(Predicate p) {
     return newRelation;
 }
 
+bool Interpreter::evaluateRule(Rule r){
+    bool repeat;
+    vector<string> headPredicateAttributes;
+    map<string, int> variableTracker;
+    Relation *newRelation = evaluatePredicate(r.bodyPredicateList.at(0));
+    for(unsigned int i = 0; i < r.bodyPredicateList.size()-1; i++){
+        newRelation = newRelation->Join(evaluatePredicate(r.bodyPredicateList.at(i+1)));
+    }
+    for(unsigned int i = 0; i < newRelation->getHeader().getAttributes().size(); i++){
+        variableTracker[newRelation->getHeader().getAttributes().at(i)] = i;
+    }
+    for(unsigned int i = 0; i < r.headPredicate.parameterList.size(); i++){
+        headPredicateAttributes.push_back(r.headPredicate.parameterList.at(i).tokenDescription);
+    }
+    newRelation = newRelation->Project(headPredicateAttributes, variableTracker);
+    newRelation->setHeader(headPredicateAttributes);
+    repeat = myDatabase.findRelation(r.headPredicate.predicateName)->FusionHa(newRelation);
+    return repeat;
+}
+
+void Interpreter::evaluateRules(){
+    cout << "Rule Evaluation" << endl;
+    bool repeat = true;
+    bool check = true;
+    int count = 0;
+    while(repeat == true) {
+        int checkCount = 0;
+        for (unsigned int i = 0; i < this->myDatalogProgram.ruleList.size(); i++) {
+            myDatalogProgram.ruleList.at(i).RuleToString();
+            cout << endl;
+            bool check = evaluateRule(this->myDatalogProgram.ruleList.at(i));
+            if(check == true){
+                checkCount++;
+            }
+        }
+        count++;
+        if(checkCount == 0){
+            repeat = false;
+        }
+    }
+    cout << endl;
+    cout << "Schemes populated after " << count << " passes through the Rules." << endl;
+    cout << endl;
+}
+
+
+
 void Interpreter::evaluateQueries(){
+    cout << "Query Evaluation" << endl;
     Relation *newRelation = new Relation;
     for(unsigned int i = 0; i < this->myDatalogProgram.queryList.size(); i++){
         newRelation = evaluatePredicate(this->myDatalogProgram.queryList.at(i));

@@ -35,6 +35,8 @@ public:
     Relation* Select2(int columnNumber, map<string, int> variableTracker, string rowID);
     Relation* Project(vector<string> variableList, map<string, int> variableTracker);
     Relation* Rename(Relation *relation, vector<string> variableList, map<string, int> variableTracker);
+    Relation* Join(Relation *relation);
+    bool FusionHa(Relation *relation);
 };
 
 

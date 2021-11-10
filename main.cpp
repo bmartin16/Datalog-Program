@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
     DatalogProgram myDatalogProgram;
     Lexer *lexer = new Lexer();
     string inputString;
-    string fileName = argv[1];
+    string fileName = "input8.txt";
     ifstream iFile(fileName);
     if(iFile.is_open()) {
         ostringstream ss;
@@ -39,6 +39,7 @@ int main(int argc, char** argv) {
     }
 
     Interpreter *interpreter = new Interpreter(myDatalogProgram);
+    interpreter->evaluateRules();
     interpreter->evaluateQueries();
 
     // TODO

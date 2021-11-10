@@ -11,7 +11,6 @@ Rule::Rule(vector<Predicate> body, Predicate head) {
 Rule::Rule() {}
 
 void Rule::RuleToString(){
-    cout << "  ";
     headPredicate.PredicateToString();
     cout << " :- ";
     for(unsigned int i = 0; i < bodyPredicateList.size(); i++){

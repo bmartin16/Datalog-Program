@@ -19,6 +19,10 @@ public:
 
     Relation* evaluatePredicate(Predicate p);
 
+    bool evaluateRule(Rule r);
+
+    void evaluateRules();
+
     void evaluateQueries();
 
 };

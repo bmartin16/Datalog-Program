@@ -72,7 +72,7 @@ int Relation::getQueryCounter(){
 
 Relation* Relation::Select(int columnNumber, string rowID){
     Relation* relation = new Relation();
-    for(Tuple t: rows) {
+    for(const Tuple& t: rows) {
         if(t.getValues().at(columnNumber) == rowID){
             relation->addTuple(t);
         }
@@ -82,7 +82,7 @@ Relation* Relation::Select(int columnNumber, string rowID){
 
 Relation* Relation::Select2(int columnNumber, map<string, int> variableTracker, string rowID){
     Relation* relation = new Relation();
-    for(Tuple t: rows) {
+    for(const Tuple& t: rows) {
         if(t.getValues().at(variableTracker[t.getValues().at(columnNumber)]) == t.getValues().at(columnNumber)){
             relation->addTuple(t);
         }
@@ -92,7 +92,7 @@ Relation* Relation::Select2(int columnNumber, map<string, int> variableTracker, 
 
 Relation* Relation::Project(vector<string> variableList, map<string, int> variableTracker){
     Relation *newRelation = new Relation;
-    for(Tuple t: rows){
+    for(const Tuple& t: rows){
         Tuple newTuple;
         for(unsigned int i = 0; i < variableList.size(); i++) {
             newTuple.addValue(t.getValues().at(variableTracker[variableList.at(i)]));
@@ -141,8 +141,8 @@ Relation* Relation::Join(Relation *relation){
         newRelation->header.addAttribute(relation->getHeader().getAttributes().at(differentIndicies.at(i)));
     }
     //check if the tuples are able to be combined
-    for(Tuple t: relation->getRows()){
-        for(Tuple t2: rows){
+    for(const Tuple& t: relation->getRows()){
+        for(const Tuple& t2: rows){
             combine = false;
             for(unsigned int i = 0; i < pairList.size(); i++){
                 if(t.getValues().at(pairList.at(i).first) == t2.getValues().at(pairList.at(i).second)){
@@ -184,9 +184,9 @@ Relation* Relation::Join(Relation *relation){
 
 bool Relation::FusionHa(Relation *relation) {
     bool newTuples = false;
-    for(Tuple t: relation->getRows()){
+    for(const Tuple& t: relation->getRows()){
         bool combine = true;
-        for(Tuple t2: rows){
+        for(const Tuple& t2: rows){
             if(t.getValues() == t2.getValues()){
                 combine = false;
             }

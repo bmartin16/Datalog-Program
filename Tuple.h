@@ -17,7 +17,7 @@ public:
     bool operator< (const Tuple &other) const {
         return values < other.values;
     }
-    vector<string> getValues();
+    vector<string> const getValues() const;
     void addValue(string value);
     string getValue(string value, int index);
 };

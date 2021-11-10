@@ -7,7 +7,7 @@ Tuple::Tuple(){}
 Tuple::Tuple(vector<string> values){
     this->values = values;
 }
-vector<string> Tuple::getValues() {
+vector<string> const Tuple::getValues() const {
     return values;
 }
 

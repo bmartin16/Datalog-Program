@@ -22,7 +22,7 @@ public:
     map <int, set<int>> getAdjacencyList();
     void setAdjacencyList(map<int, set<int>>);
     map<int, bool> visited;
-    int counter = 0;
+    long unsigned int counter = 0;
     map<int, int> postorderList;
     vector<set<int>> stronglyConnectedComponents;
     vector<set<int>> getStronglyConnectedComponents();

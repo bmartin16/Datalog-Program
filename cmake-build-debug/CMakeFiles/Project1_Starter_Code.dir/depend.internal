@@ -18,6 +18,9 @@ CMakeFiles/Project1_Starter_Code.dir/DatalogProgram.cpp.obj
  C:/Users/18bma/cs236/Datalog-Program/Parameter.h
  C:/Users/18bma/cs236/Datalog-Program/Predicate.h
  C:/Users/18bma/cs236/Datalog-Program/Rule.h
+CMakeFiles/Project1_Starter_Code.dir/Graph.cpp.obj
+ C:/Users/18bma/cs236/Datalog-Program/Graph.cpp
+ C:/Users/18bma/cs236/Datalog-Program/Graph.h
 CMakeFiles/Project1_Starter_Code.dir/Header.cpp.obj
  C:/Users/18bma/cs236/Datalog-Program/Header.cpp
  C:/Users/18bma/cs236/Datalog-Program/Header.h
@@ -34,6 +37,7 @@ CMakeFiles/Project1_Starter_Code.dir/IncompleteStringAutomaton.cpp.obj
 CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.obj
  C:/Users/18bma/cs236/Datalog-Program/Database.h
  C:/Users/18bma/cs236/Datalog-Program/DatalogProgram.h
+ C:/Users/18bma/cs236/Datalog-Program/Graph.h
  C:/Users/18bma/cs236/Datalog-Program/Header.h
  C:/Users/18bma/cs236/Datalog-Program/Interpreter.cpp
  C:/Users/18bma/cs236/Datalog-Program/Interpreter.h
@@ -109,6 +113,7 @@ CMakeFiles/Project1_Starter_Code.dir/main.cpp.obj
  C:/Users/18bma/cs236/Datalog-Program/Automaton.h
  C:/Users/18bma/cs236/Datalog-Program/Database.h
  C:/Users/18bma/cs236/Datalog-Program/DatalogProgram.h
+ C:/Users/18bma/cs236/Datalog-Program/Graph.h
  C:/Users/18bma/cs236/Datalog-Program/Header.h
  C:/Users/18bma/cs236/Datalog-Program/Interpreter.h
  C:/Users/18bma/cs236/Datalog-Program/Lexer.h

@@ -18,6 +18,9 @@ CMakeFiles/Project1_Starter_Code.dir/DatalogProgram.cpp.obj: \
  ../Parameter.h \
  ../Predicate.h \
  ../Rule.h
+CMakeFiles/Project1_Starter_Code.dir/Graph.cpp.obj: \
+ ../Graph.cpp \
+ ../Graph.h
 CMakeFiles/Project1_Starter_Code.dir/Header.cpp.obj: \
  ../Header.cpp \
  ../Header.h
@@ -34,6 +37,7 @@ CMakeFiles/Project1_Starter_Code.dir/IncompleteStringAutomaton.cpp.obj: \
 CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.obj: \
  ../Database.h \
  ../DatalogProgram.h \
+ ../Graph.h \
  ../Header.h \
  ../Interpreter.cpp \
  ../Interpreter.h \
@@ -109,6 +113,7 @@ CMakeFiles/Project1_Starter_Code.dir/main.cpp.obj: \
  ../Automaton.h \
  ../Database.h \
  ../DatalogProgram.h \
+ ../Graph.h \
  ../Header.h \
  ../Interpreter.h \
  ../Lexer.h \

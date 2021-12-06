@@ -103,6 +103,12 @@
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/DatalogProgram.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Graph.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Graph.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="C:/Users/18bma/cs236/Datalog-Program/Header.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>

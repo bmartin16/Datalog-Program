@@ -77,28 +77,44 @@ bool Interpreter::evaluateRule(Rule r){
     return repeat;
 }
 
-void Interpreter::evaluateRules(){
-    cout << "Rule Evaluation" << endl;
+void Interpreter::evaluateRules(set<int> SSC, bool dependsOnSelf){
     bool repeat = true;
     int count = 0;
-    while(repeat == true) {
+    if(SSC.size() > 1 || dependsOnSelf == true) {
+        while (repeat == true) {
+            int checkCount = 0;
+            set<int>::iterator it;
+            for (it = SSC.begin(); it != SSC.end(); it++) {
+                myDatalogProgram.ruleList.at(*it).RuleToString();
+                cout << endl;
+                bool check = evaluateRule(this->myDatalogProgram.ruleList.at(*it));
+                if (check == true) {
+                    checkCount++;
+                }
+            }
+            count++;
+            if (checkCount == 0) {
+                repeat = false;
+            }
+        }
+    }
+    else{
         int checkCount = 0;
-        for (unsigned int i = 0; i < this->myDatalogProgram.ruleList.size(); i++) {
-            myDatalogProgram.ruleList.at(i).RuleToString();
+        set<int>::iterator it;
+        for (it = SSC.begin(); it != SSC.end(); it++) {
+            myDatalogProgram.ruleList.at(*it).RuleToString();
             cout << endl;
-            bool check = evaluateRule(this->myDatalogProgram.ruleList.at(i));
-            if(check == true){
+            bool check = evaluateRule(this->myDatalogProgram.ruleList.at(*it));
+            if (check == true) {
                 checkCount++;
             }
         }
         count++;
-        if(checkCount == 0){
+        if (checkCount == 0) {
             repeat = false;
         }
     }
-    cout << endl;
-    cout << "Schemes populated after " << count << " passes through the Rules." << endl;
-    cout << endl;
+    cout << count << " passes: ";
 }
 
 
@@ -118,4 +134,99 @@ void Interpreter::evaluateQueries(){
             cout << "No" << endl;
         }
     }
+}
+
+Graph* Interpreter::makeGraph() {
+    Graph *forwardGraph = new Graph();
+    map<int, set<int>> adjacencyList;
+    for(unsigned int i = 0; i < this->myDatalogProgram.ruleList.size(); i++){
+        set<int> adjacencies;
+        for(unsigned int j = 0; j < this->myDatalogProgram.ruleList.size(); j++){
+            for(unsigned int k = 0; k < this->myDatalogProgram.ruleList.at(i).bodyPredicateList.size(); k++) {
+                if(this->myDatalogProgram.ruleList.at(j).headPredicate.predicateName == this->myDatalogProgram.ruleList.at(i).bodyPredicateList.at(k).predicateName){
+                    adjacencies.insert(j);
+                }
+            }
+        }
+      adjacencyList[i] = adjacencies;
+    }
+    forwardGraph->setAdjacencyList(adjacencyList);
+    return forwardGraph;
+}
+
+Graph* Interpreter::makeReverseGraph() {
+    Graph *forwardGraph = makeGraph();
+    map<int, set<int>> adjacencyList = forwardGraph->getAdjacencyList();
+    Graph *reverseGraph = new Graph();
+    map<int, set<int>> reverseAdjacencyList;
+    for(unsigned int i = 0; i < adjacencyList.size(); i++){
+        set<int>::iterator it;
+        for(it = adjacencyList[i].begin(); it != adjacencyList[i].end(); ++it){
+                reverseAdjacencyList[(*it)].insert(i);
+        }
+        if(reverseAdjacencyList[i].size() == 0){
+            reverseAdjacencyList[i] = {};
+        }
+    }
+    reverseGraph->setAdjacencyList(reverseAdjacencyList);
+    return reverseGraph;
+}
+
+Graph* Interpreter::postorderDepthFirstSearch(Graph *reverseGraph, int node) {
+    map<int, set<int>> reverseAdjacencyList = reverseGraph->getAdjacencyList();
+    set<int>::iterator it;
+    reverseGraph->visited[node] = true;
+    for(it = reverseAdjacencyList[node].begin(); it != reverseAdjacencyList[node].end(); ++it){
+        if(reverseGraph->visited[*it] != true){
+            postorderDepthFirstSearch(reverseGraph, (*it));
+        }
+    }
+
+    reverseGraph->postorderList[reverseGraph->counter] = node;
+    reverseGraph->counter++;
+
+    return reverseGraph;
+}
+
+set<int> Interpreter::SSCDepthFirstSearch(Graph *forwardGraph, int node, set<int> &component){
+    map<int, set<int>> adjacencyList = forwardGraph->getAdjacencyList();
+    set<int>::iterator it;
+    forwardGraph->visited[node] = true;
+    forwardGraph->counter++;
+    for(it = adjacencyList[node].begin(); it != adjacencyList[node].end(); ++it){
+        if(forwardGraph->visited[*it] != true){
+            SSCDepthFirstSearch(forwardGraph, (*it), component);
+        }
+    }
+    component.insert(node);
+    forwardGraph->beginNode = forwardGraph->postorderList[forwardGraph->getAdjacencyList().size()-((forwardGraph->counter)+1)];
+
+    if(forwardGraph->counter == adjacencyList.size()){
+        for(unsigned int i = 0; i < adjacencyList.size(); i++) {
+            if(forwardGraph->visited[i] != true) {
+                forwardGraph->beginNode = i;
+            }
+        }
+        forwardGraph->done = true;
+    }
+
+    return component;
+}
+
+void Interpreter::printGraph(Graph *forwardGraph){
+    cout << "Dependency Graph" << endl;
+    map<int, set<int>> adjacencyList;
+    adjacencyList = forwardGraph->getAdjacencyList();
+    for(unsigned int i = 0; i < adjacencyList.size(); i++){
+        cout << "R" << i << ":";
+        set<int>::iterator it;
+        for(it = adjacencyList[i].begin(); it != adjacencyList[i].end(); ++it){
+            cout << "R" << (*it);
+            if(next(it) != adjacencyList[i].end()){
+                cout << ",";
+            }
+        }
+        cout << endl;
+    }
+    cout << endl;
 }

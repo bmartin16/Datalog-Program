@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/18bma/cs236/Datalog-Program/Automaton.h
+Token.h
+C:/Users/18bma/cs236/Datalog-Program/Token.h
+
 C:/Users/18bma/cs236/Datalog-Program/Database.h
 Relation.h
 C:/Users/18bma/cs236/Datalog-Program/Relation.h
@@ -18,24 +22,50 @@ C:/Users/18bma/cs236/Datalog-Program/Rule.h
 set
 -
 
+C:/Users/18bma/cs236/Datalog-Program/Graph.h
+iostream
+C:/Users/18bma/cs236/Datalog-Program/iostream
+string
+-
+map
+-
+set
+-
+vector
+-
+
 C:/Users/18bma/cs236/Datalog-Program/Header.h
 iostream
 C:/Users/18bma/cs236/Datalog-Program/iostream
 vector
 -
 
-C:/Users/18bma/cs236/Datalog-Program/Interpreter.cpp
-Interpreter.h
-C:/Users/18bma/cs236/Datalog-Program/Interpreter.h
-
 C:/Users/18bma/cs236/Datalog-Program/Interpreter.h
 Database.h
 C:/Users/18bma/cs236/Datalog-Program/Database.h
 DatalogProgram.h
 C:/Users/18bma/cs236/Datalog-Program/DatalogProgram.h
+Graph.h
+C:/Users/18bma/cs236/Datalog-Program/Graph.h
+
+C:/Users/18bma/cs236/Datalog-Program/Lexer.h
+vector
+-
+Automaton.h
+C:/Users/18bma/cs236/Datalog-Program/Automaton.h
+Token.h
+C:/Users/18bma/cs236/Datalog-Program/Token.h
 
 C:/Users/18bma/cs236/Datalog-Program/Parameter.h
 string
+-
+
+C:/Users/18bma/cs236/Datalog-Program/Parser.h
+Token.h
+C:/Users/18bma/cs236/Datalog-Program/Token.h
+DatalogProgram.h
+C:/Users/18bma/cs236/Datalog-Program/DatalogProgram.h
+vector
 -
 
 C:/Users/18bma/cs236/Datalog-Program/Predicate.h
@@ -60,9 +90,29 @@ C:/Users/18bma/cs236/Datalog-Program/Rule.h
 Predicate.h
 C:/Users/18bma/cs236/Datalog-Program/Predicate.h
 
+C:/Users/18bma/cs236/Datalog-Program/Token.h
+string
+-
+
 C:/Users/18bma/cs236/Datalog-Program/Tuple.h
 iostream
 C:/Users/18bma/cs236/Datalog-Program/iostream
 vector
+-
+
+C:/Users/18bma/cs236/Datalog-Program/main.cpp
+Lexer.h
+C:/Users/18bma/cs236/Datalog-Program/Lexer.h
+Parser.h
+C:/Users/18bma/cs236/Datalog-Program/Parser.h
+Interpreter.h
+C:/Users/18bma/cs236/Datalog-Program/Interpreter.h
+Token.h
+C:/Users/18bma/cs236/Datalog-Program/Token.h
+fstream
+-
+sstream
+-
+iostream
 -
 

@@ -6,6 +6,7 @@
 #define PROJECT1_STARTER_CODE_INTERPRETER_H
 #include "Database.h"
 #include "DatalogProgram.h"
+#include "Graph.h"
 
 class Interpreter {
 private:
@@ -21,9 +22,21 @@ public:
 
     bool evaluateRule(Rule r);
 
-    void evaluateRules();
+    void evaluateRules(set<int> SSC, bool dependsOnSelf);
 
     void evaluateQueries();
+
+    Graph* makeGraph();
+
+    Graph* makeReverseGraph();
+
+    Graph* postorderDepthFirstSearch(Graph *reverseGraph, int node);
+
+    set<int> SSCDepthFirstSearch(Graph *reverseGraph, int node, set<int> &component);
+
+    void printGraph(Graph *forwardGraph);
+
+
 
 };
 

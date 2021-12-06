@@ -200,6 +200,30 @@ DatalogProgram.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project1_Starter_Code.dir\build.make CMakeFiles/Project1_Starter_Code.dir/DatalogProgram.cpp.s
 .PHONY : DatalogProgram.cpp.s
 
+Graph.obj: Graph.cpp.obj
+.PHONY : Graph.obj
+
+# target to build an object file
+Graph.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project1_Starter_Code.dir\build.make CMakeFiles/Project1_Starter_Code.dir/Graph.cpp.obj
+.PHONY : Graph.cpp.obj
+
+Graph.i: Graph.cpp.i
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project1_Starter_Code.dir\build.make CMakeFiles/Project1_Starter_Code.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project1_Starter_Code.dir\build.make CMakeFiles/Project1_Starter_Code.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
+
 Header.obj: Header.cpp.obj
 .PHONY : Header.obj
 
@@ -626,6 +650,9 @@ help:
 	@echo ... DatalogProgram.obj
 	@echo ... DatalogProgram.i
 	@echo ... DatalogProgram.s
+	@echo ... Graph.obj
+	@echo ... Graph.i
+	@echo ... Graph.s
 	@echo ... Header.obj
 	@echo ... Header.i
 	@echo ... Header.s
